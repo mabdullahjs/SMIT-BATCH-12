@@ -1,0 +1,34 @@
+* {
+    color: blueviolet;
+    background-color: lightcyan;
+}
+
+
+/* .head-one {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+#hello {
+    background-color: lightblue;
+    color: palevioletred;
+    text-align: end;
+}
+
+p {
+    text-align: center;
+} */
+
+/* .text-center {
+    text-align: center;
+}
+
+h1,
+h3 {
+    text-align: center;
+} */
+
+li>a {
+    color: red;
+}
