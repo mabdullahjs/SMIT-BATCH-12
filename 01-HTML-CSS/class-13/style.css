@@ -1,0 +1,45 @@
+/* body{
+    background-color: #bfbfc0;
+}
+.bg-white{
+    background-color: white;
+    margin: 15px;
+}
+.text-white{
+    color: white;
+}
+.div-one{
+    background-color: #2882c5;
+    padding: 5px;
+    margin: 0px 15px;
+} */
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #bebfc2;
+}
+.heading{
+    margin: 40px;
+}
+.container{
+    margin: 40px;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+
+.color-one{
+    background-color: aliceblue;
+}
+.color-two{
+    background-color: rgb(196, 227, 254);
+}
+.color-three{
+    background-color: rgb(155, 208, 255);
+}
+.color-four{
+    background-color: rgb(106, 186, 255);
+}
