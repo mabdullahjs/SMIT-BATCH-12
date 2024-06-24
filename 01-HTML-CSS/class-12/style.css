@@ -1,45 +1,102 @@
-/* body{
-    background-color: #bfbfc0;
-}
-.bg-white{
-    background-color: white;
-    margin: 15px;
-}
-.text-white{
-    color: white;
-}
-.div-one{
-    background-color: #2882c5;
-    padding: 5px;
-    margin: 0px 15px;
+/* *{
+    text-align: center;
 } */
 
-*{
-    margin: 0;
+/* h1{
+    background-color: red;
+    color: white;
 }
+
+.text-center{
+    text-align: center;
+}
+
+#head-two{
+    text-align: end;
+} */
+
+
+/* 
+h1 , h2 , h3{
+    background-color: red;
+    color: white;
+    text-align: center;
+} */
+
+/* child selector */
+
+/* .container > p{
+    text-align: end;
+    } */
+
+
+/* Descendant selector */
+/* .container p {
+    text-align: end;
+} */
+
+
+/* Adjacent Sibling Selector */
+
+/* .container + p{
+    background-color: red;
+    color: white;
+
+} */
+
+/* general Sibling Selector */
+
+/* .container ~ p{
+    background-color: red;
+    color: white;
+
+} */
+
+
+
+
+
+/* How Css Rules Cascade */
+
+/* #end-item{
+    text-align: end;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1{
+    text-align: start;
+    background-color: red;
+}
+
+*{
+    text-align: center;
+} */
+
+
+
+/* Inheritance */
+
+/* body{
+    text-align: center;
+    border: 1px solid black;
+} */
 
 body{
-    background-color: #bebfc2;
-}
-.heading{
-    margin: 40px;
-}
-.container{
-    margin: 40px;
-}
-.bg-white{
-    background-color: #ffffff;
+    background-color: #000000;
+    color: #008b8b;
 }
 
-.color-one{
-    background-color: aliceblue;
+h1{
+    color: rgb(20, 100, 20);
 }
-.color-two{
-    background-color: rgb(196, 227, 254);
-}
-.color-three{
-    background-color: rgb(155, 208, 255);
-}
-.color-four{
-    background-color: rgb(106, 186, 255);
-}
+
+
+
+
+
+
+
+

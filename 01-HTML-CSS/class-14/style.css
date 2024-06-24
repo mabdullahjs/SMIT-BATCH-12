@@ -1,0 +1,72 @@
+/* relative unit
+%
+em
+
+absolute unit
+vw
+vh
+px
+
+*/
+
+/* .parent{
+    border: 2px solid black;
+    width: 50%;
+}
+
+.children{
+    border: 2px dashed red;
+    width: 50%;
+} */
+
+
+
+/* .parent{
+    border: 2px solid black;
+    width: 20vw;
+    height: 200vh;
+}
+
+.children{
+    border: 2px dashed red;
+    width: 50vw;
+    
+} */
+
+/* 1em = 16px */
+
+/* h1{
+    font-size: 64px;
+}
+p{
+    font-size: 32px;
+} */
+
+
+/* html{
+    font-size: 16px;
+}
+
+.parent{
+    font-size: 200px;
+}
+
+.heading{
+    font-size: 4rem;
+} */
+
+
+html{
+    font-size: 8px;
+}
+
+h1{
+    font-size: 12rem;
+}
+p{
+    font-size: 6rem;
+}
+
+
+
+
