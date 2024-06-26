@@ -1,0 +1,68 @@
+/* @font-face {
+    font-family: 'abdullah';
+    src: url('font/PlaywriteESDeco-VariableFont_wght.ttf');
+}
+
+html{
+    font-family: abdullah;
+} */
+
+h1{
+    text-align: start;
+    text-shadow: 1px 1px 2px #f87f7f;
+}
+p{
+    /* font-weight: bold; */
+    /* font-style: italic; */
+    /* text-transform: capitalize; */
+    /* text-decoration: wavy; */
+    /* line-height: 2rem; */
+    letter-spacing: 0.2rem;
+    word-spacing: 2rem;
+}
+
+/* a{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    background-color: red;
+} */
+
+/* :hover
+::first-letter
+::first-line
+:active
+:focus
+:visited
+:link */
+
+
+p:first-letter{
+    font-size: 2rem;
+}
+
+p:first-line{
+    color: rgb(132, 132, 132);
+}
+p{
+    cursor: pointer;
+}
+a{
+    font-size: 4rem;
+}
+
+/* a:link{
+    color: red;
+}
+a:visited{
+    color: black;
+} */
+/* 
+input:active{
+    background-color: gray;
+}
+input:focus{
+    background-color: plum;
+} */
