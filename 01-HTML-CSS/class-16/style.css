@@ -1,0 +1,28 @@
+/* .container{
+    border: 10px solid red;
+    border-width: 10px;
+    border-style: dotted;
+    border-color: aqua;
+    padding: 20px;
+    margin: 20px;
+} */
+
+/* h1{
+    border: 2px solid green;
+    margin: 20px;
+    padding: 20px;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid black;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+}
