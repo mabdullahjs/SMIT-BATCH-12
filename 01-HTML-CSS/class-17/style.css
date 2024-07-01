@@ -1,0 +1,76 @@
+/* div {
+    border: 1px solid black;
+    width: 550px;
+    min-width: 250px;
+    max-width: 550px;
+    height: 50px;
+    margin: 50px;
+    padding: 30px;
+    width: 40%;
+} */
+
+
+div{
+    /* border: 1px solid black;
+    height: 150px;
+    overflow: scroll; */
+
+    /* border-width: 20px;
+    border-style: solid;
+    border-color: black; */
+
+    /* border: 2px solid red; */
+    /* padding: 120px; */
+    /* padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 30px; */
+
+    /* padding: 50px 40px 30px 20px; */
+    /* padding: 50px 40px 20px; */
+
+    /* margin: 40px 30px 20px 10px; */
+    /* width: 200px;
+    margin: 100px auto; */
+}
+
+/* display */
+
+/* inline */
+/* block */
+/* inline-block */
+/* none */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+h1{
+    display: inline;
+    margin-top: 50px;
+}
+
+li{
+    display: inline;
+    width: 150px;
+    height: 150px;
+}
+
+img{
+    width: 40px;
+}
+
+p{
+    display: none;
+    visibility: hidden;
+} */
+
+
+div{
+    border: 1px solid black;
+    box-shadow:  5px 5px 5px #908f8f;
+    /* border-radius: 76% 24% 89% 11% / 11% 87% 13% 89% ;
+    overflow: hidden; */
+}
