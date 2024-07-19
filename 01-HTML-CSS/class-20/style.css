@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+.parent{
+    border: 1px solid black;
+    height: 60vh;
+    display: flex;
+    /* flex-direction: row; */
+    flex-flow: row wrap;
+    justify-content: center;
+    /* gap: 30px; */
+    /* row-gap: 30px;
+    column-gap: 30px; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    align-content: center;
+}
+
+.box{
+    border: 1px solid red;
+    flex-basis: 20%;
+}
+
+#box-1{
+    /* order: 1; */
+    /* flex-grow: 1; */
+}
+
+#box-2{
+    /* order: 1; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+}
+
+#box-3{
+    /* flex-basis: 10%; */
+}
