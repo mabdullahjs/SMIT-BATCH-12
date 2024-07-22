@@ -1,0 +1,63 @@
+/* div {
+    border: 15px double black;
+     border-width: 15px;
+    border-style: double;
+    border-color: black; 
+    padding: 20px 10px;
+    margin: 20px 10px;
+     border-top: 2px solid black;
+    border-bottom: 2px solid black; 
+     width: 50px;
+    margin: 0 auto; 
+    width: 400px;
+    box-sizing: border-box;
+
+} */
+
+
+/* 
+html {
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 2rem;
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 200vh;
+
+}
+
+.children{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+}
+
+.red{
+    background-color: red;
+    position: relative;
+    /* top: 50px;
+    left: 20px; */
+}
+.green{
+    background-color: green;
+    position: absolute;
+    /* z-index: 1; */
+    /* bottom: 10px; */
+
+}
+.blue{
+    background-color: blue;
+    position: fixed;
+}
