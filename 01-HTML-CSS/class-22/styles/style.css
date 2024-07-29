@@ -1,0 +1,16 @@
+.parent{
+    border: 2px solid black;
+    display: flex;
+    height: 250px;
+    /* flex-direction:column; */
+    justify-content: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    align-items: center ;
+}
+
+.children{
+    border: 1px solid red;
+    border: 2px solid black;
+}

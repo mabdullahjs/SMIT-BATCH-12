@@ -1,0 +1,22 @@
+.logo-image{
+    width: 185px;
+}
+.menu-items{
+    font-size: 2.3rem;
+}
+
+.franchise-btn{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+}
+
+.order-btn{
+    background-color: var(--red);
+    border: none;
+    padding: 12px 17px;
+    border-radius: 30px;
+    font-size: 1.6rem;
+}

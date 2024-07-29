@@ -1,0 +1,16 @@
+.feedback-container{
+    height: 720px;
+    background-image: url('../assets/feedback-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+.main-head{
+    font-size: 5rem;
+}
+.feedback-head{
+    font-size: 12rem;
+}
+.para-head{
+    font-size: 3rem;
+}
