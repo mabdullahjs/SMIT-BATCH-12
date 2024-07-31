@@ -1,3 +1,18 @@
 .carousel-img{
     margin-bottom: 50px;
 }
+#menu-icon{
+    font-size: 4rem;
+}
+.menu{
+    display: none;
+}
+
+@media(max-width: 1100px){
+    #menu-item{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
