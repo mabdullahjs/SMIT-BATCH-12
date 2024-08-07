@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salt and pepper</title>
-    <link rel="stylesheet" href="./styles/utility.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- navbar started -->
-     <nav id="navbar" class="d-flex justify-around item-center flex-wrap mt-5" >
-        <div>
-            <img class="logo-image" src="./assets/logo.webp" alt="logo-image">
-        </div>
-        <div id="menu-item" class="d-flex gap-5 flex-wrap item-center">
-            <a class="text-none menu-items" href="./index.html">Home</a>
-            <a class="text-none menu-items" href="#">About</a>
-            <a class="text-none menu-items" href="#">Publications</a>
-            <a class="text-none menu-items" href="./feedback.html">Feedback</a>
-            <button class="franchise-btn"><a class="text-none " href="">Get a Franchise</a></button>
-            <button class="order-btn"><a class="text-none " href="">Order Now</a></button>
-            <!-- font awesome for icons -->
-        </div>
-        <div class="menu">
-            <i id="menu-icon" class="fa-solid fa-bars"></i>
-        </div>
-     </nav>
+    <nav data-aos="fade-up" id="navbar" class="d-flex justify-around item-center flex-wrap mt-5">
+      <div>
+        <img class="logo-image" src="./assets/logo.webp" alt="logo-image" />
+      </div>
+      <div id="menu-item" class="d-flex gap-5 flex-wrap item-center">
+        <a class="text-none menu-items" href="./index.html">Home</a>
+        <a class="text-none menu-items" href="#">About</a>
+        <a class="text-none menu-items" href="#">Publications</a>
+        <a class="text-none menu-items" href="./feedback.html">Feedback</a>
+        <button class="franchise-btn">
+          <a class="text-none" href="">Get a Franchise</a>
+        </button>
+        <button class="order-btn">
+          <a class="text-none" href="">Order Now</a>
+        </button>
+        <!-- font awesome for icons -->
+      </div>
+      <div class="menu">
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
     <!-- navbar ended -->
 
     <!-- carousel started -->
-     <div>
-        <img class="carousel-img w-full" src="https://static.tossdown.com/images/cb3c2d22-7957-4c35-a140-367b8464f7a3.webp" alt="carousel-image">
-     </div>
+    <div>
+      <img
+        class="carousel-img w-full"
+        src="https://static.tossdown.com/images/cb3c2d22-7957-4c35-a140-367b8464f7a3.webp"
+        alt="carousel-image"
+      />
+    </div>
     <!-- carousel ended -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="https://kit.fontawesome.com/9aded8b196.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/9aded8b196.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
