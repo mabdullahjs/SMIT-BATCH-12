@@ -1,0 +1,36 @@
+Introduction to JavaScript
+Variables and Data Types
+Operators and Expressions
+Conditional Statements
+Functions and DOM Introduction
+DOM Manipulation
+Arrays and Array Methods
+Loops
+Todo App
+String Methods
+Number Methods
+Switch Statement || Hoisting || SetInternval and Timeout
+Date and Time
+Objects || this Keyword
+DOM
+Array Loops
+Local Storage || Regex
+Events
+Asynchronous and Synchronous Programming
+API Basics
+Fetch API
+Promises
+Async/Await
+ES6 Features
+ES6 Topics
+var, let, const
+Template Literals
+ternary operators
+Object Methods (keys,values,freez,entries)
+spread Operators
+rest operators
+destructuring
+higher order
+callback function
+Arrow function
+Closures
