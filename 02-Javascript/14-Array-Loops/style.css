@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.card{
+    border: 1px solid black;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
