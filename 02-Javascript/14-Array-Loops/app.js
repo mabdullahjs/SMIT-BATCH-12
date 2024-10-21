@@ -418,3 +418,38 @@ const products = [
     }
 ];
 
+
+function renderItems(arr){
+    div.innerHTML = ""
+    arr.map(item => {
+        // console.log(item)
+        div.innerHTML += `
+        <div class="card">
+                <h1>Name: ${item.name}</h1>
+                <h2>Category: ${item.category}</h2>
+                <h1>Price ${item.price}</h1>
+            </div>
+        `
+    })
+    
+}
+
+// console.log(products)
+
+const div = document.querySelector(".container");
+
+renderItems(products)
+
+
+
+function filteredItem (btn){
+    console.log(btn.innerHTML)
+
+    const filterProduct = products.filter(item => item.category === btn.innerHTML)
+
+    console.log(filterProduct);
+    renderItems(filterProduct)
+    
+
+}
+
