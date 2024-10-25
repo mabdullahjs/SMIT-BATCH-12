@@ -161,9 +161,17 @@ const phones = [
   },
 ];
 
-const div = document.querySelector("#container");
+let cartItems;
+const checkDataFromLocalStorage = JSON.parse(localStorage.getItem("cart"));
+if (checkDataFromLocalStorage === null) {
+  cartItems = [];
+} else {
+  cartItems = [...checkDataFromLocalStorage];
+}
 
-const cartItems = [];
+console.log("cartitems===>", cartItems);
+
+const div = document.querySelector("#container");
 
 phones.map((item, index) => {
   div.innerHTML += `
@@ -184,9 +192,24 @@ function addToCart(index) {
     cartItems[checkIndex].quantity += 1;
   }
   console.log(cartItems);
+  Swal.fire({
+    title: "Good job!",
+    text: "Item added to cart successfully!",
+    icon: "success",
+  });
 }
 
 function checkout() {
   console.log("checkout");
+  // local storage ka undar data store krwana ha.
+  const convertArrIntoStr = JSON.stringify(cartItems);
+  localStorage.setItem("cart", convertArrIntoStr);
   window.location = "cart.html";
 }
+
+// const num1 = [1, 2, 3];
+// const num2 = [4, 5, 6];
+
+// const newArr = [...num1, ...num2];
+
+// console.log(newArr);
