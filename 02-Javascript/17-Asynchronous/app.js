@@ -20,3 +20,121 @@
 // setTimeout(()=>{
 //     console.log(data)
 // } , 1000)
+
+console.log("hello world!");
+
+// pending
+// Fullfilled
+// rejected
+
+// .then
+// .catch
+// const num = 1;
+
+// const promise1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (num > 5) {
+//       console.log("data received");
+//       resolve();
+//     } else {
+//       console.log("nahi ayaa.");
+//       reject();
+//     }
+//   }, 1000);
+// });
+
+// promise1
+//   .then(() => {
+//     console.log("resolve chal rha ha");
+//   })
+//   .catch(() => {
+//     console.log("reject chal rha ha");
+//   });
+
+// console.log(promise1);
+
+// const promise2 = new Promise(function (resolve, reject) {
+//   setTimeout(() => {
+//     if (false) {
+//       resolve("resolve chal rha ha");
+//     } else {
+//       reject("error occured");
+//     }
+//   }, 1000);
+// });
+
+// promise2
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+function shaadiScnz(bankBalance, username) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (bankBalance > 1000000) {
+        resolve(`shaadi mubarak hoo. 5000 do or niklo. ${username}`);
+      } else {
+        reject(`tumhara kuch nahi hoskta. Tum veela rho. ${username}`);
+      }
+    }, 2000);
+  });
+}
+
+// shaadiScnz(2000000, "abdullah")
+//   .then((res) => {
+//     console.log(res);
+//     return res + " returned from first .then";
+//   })
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// shaadiScnz(2500000, "wajid usto")
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// async function hello() {
+//   const shaadiKrniHa = await shaadiScnz(2000000);
+//   console.log(shaadiKrniHa);
+// }
+
+// hello();
+
+// console.log("hello world!");
+
+const div = document.querySelector(".container");
+
+fetch("https://dummyjson.com/products")
+  .then((res) => res.json())
+  .then((res) => {
+    console.log(res.products);
+    res.products.map((item) => {
+      div.innerHTML += `<div class="card">
+            <img src=${item.thumbnail}
+                alt="thumbnail">
+            <h1>${item.title}</h1>
+            <p>${item.description.slice(0, 20)}...</p>
+            <p>Price: $${item.price}</p>
+            <button onclick="showMore(${item.id})">See more</button>
+        </div>`;
+    });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+const showMore = (id) => {
+  console.log(id);
+  localStorage.setItem("id", id);
+  window.location = "singleProduct.html";
+};
