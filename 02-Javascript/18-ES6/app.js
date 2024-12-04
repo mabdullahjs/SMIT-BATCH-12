@@ -3,9 +3,9 @@
 // lexical scoping 
 // Modules
 // Object Methods (keys,values,freez,entries)
-// Exponentiation Operator 
-// Optional chaining 
-// Destructuring 
+// Exponentiation Operator //c
+// Optional chaining //c
+// Destructuring  //c
 // Template literals //c
 // Destructuring 
 // Default parameters //c 
@@ -149,4 +149,70 @@
 //     age
 // }
 
+// const {username} = obj
+
 // console.log(obj);
+
+
+
+// Destructuring 
+
+// const user = {
+//     username: 'mabdullah',
+//     fullname: 'Muhammad Abdullah',
+//     email: 'mabdullah2037@gmail.com',
+//     age: 21,
+//     hobbies: ['cricket' , 'swimming' , 'eating'],
+//     isLoggedIn: true,
+// }
+
+// let {username , age , email , hobbies} = user
+// username = "usman"
+
+// // console.log(obj.username)
+// // console.log(obj['hobbies'])
+
+// console.log(username);
+
+
+
+// const adventurer = {
+//     name: 'Alice',
+//     cats: {
+//         name: 'Dinah',
+//         options: {
+//             hobbies: 'sleeping'
+//         }
+//     },
+// };
+
+// console.log(adventurer.cats?.options?.hobbies);
+
+
+
+
+// Exponential Operator
+
+// console.log(5 ** 5);
+// console.log(2 ** (3 ** 2));
+// console.log(2 ** 9);
+
+
+// 2 x 2 x 2 = 8
+// 5x5x5x5x5 = 3125
+
+
+
+// closures
+
+function parentFunc(){
+    console.log('parent function');
+     function childrenFunc(){
+        console.log('children function');  
+    }
+
+    return childrenFunc
+}
+
+const returnedVal = parentFunc()
+console.log(returnedVal);
