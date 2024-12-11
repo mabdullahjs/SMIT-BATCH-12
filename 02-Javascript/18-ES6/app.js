@@ -1,18 +1,18 @@
 // Variable Scoping //c
-// Closure 
-// lexical scoping 
+// Closure //c
+// lexical scoping //c 
 // Modules
 // Object Methods (keys,values,freez,entries)
 // Exponentiation Operator //c
 // Optional chaining //c
 // Destructuring  //c
 // Template literals //c
-// Destructuring 
+// Destructuring //c
 // Default parameters //c 
 // Rest parameter //c
 // Spread Operator //c
 // Arrow functions  //c
-// Enhanced object literals  
+// Enhanced object literals  //c
 // Iterators & For..of  //c
 // Map  //c
 // Array methods  //c
@@ -205,14 +205,94 @@
 
 // closures
 
-function parentFunc(){
-    console.log('parent function');
-     function childrenFunc(){
-        console.log('children function');  
-    }
+// function parentFunc() {
+//     console.log('parent function');
+//     function childrenFunc() {
+//         console.log('children function');
+//     }
 
-    return childrenFunc
+//     return childrenFunc
+// }
+
+// // const returnedFunc = parentFunc()
+// // returnedFunc()
+
+// parentFunc()()
+
+
+
+// function sum(num1 , num2){
+//     return num1 + num2
+// }
+
+
+// const total = sum(10 , 20);
+// console.log(total);
+
+
+
+
+
+// lexical scoping
+
+
+// function parentFunc() {
+//     let username = "Abdullah"
+    
+
+//     function children2() {
+//         let childUser1 = "usman"
+//         console.log('first children func ==>',childUser1 , username)
+//     }
+//     function children3() {
+//         let childUser2 = "ammar"
+//         console.log('second children func ==>',childUser2 , username)
+//     }
+
+//     children2()
+//     children3()
+
+// }
+
+// parentFunc()
+
+
+
+
+// Object Methods (keys,values,freez,entries)
+
+const user = {
+    fullName: "Muhammad Abdullah",
+    email: "mabdullah2037@gmail.com",
+    age: 21,
+    isLoggedIn: true,
+    hobbies: ['cricket' , 'swimming' , 'eating' , 'sleeping']
 }
 
-const returnedVal = parentFunc()
-console.log(returnedVal);
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
+
+Object.freeze(user)
+
+user.fullName = "Usman"
+delete user.age
+
+
+
+console.log(user);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
