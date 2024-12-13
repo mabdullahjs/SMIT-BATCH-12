@@ -57,7 +57,7 @@
 // Classes
 
 // constructor
-// prototype 
+// prototype
 // static method
 
 // class Car {
@@ -101,12 +101,12 @@
 // class BankAccount {
 //     #balance = 0;
 
-//     deposit(amount){
+//     deposit(amount) {
 //         this.#balance += amount
 //         return `your account has been credited with ${amount}`
 //     }
 
-//     accountBalance (){
+//     accountBalance() {
 //         return `your account balance is Rs:${this.#balance}`
 //     }
 // }
@@ -121,3 +121,84 @@
 
 
 // Polymorphism
+
+// class Bird {
+//     fly() {
+//         return `birds can fly`
+//     }
+
+//     method() {
+//         return `this is a bird method`
+//     }
+// }
+
+// class Penguin extends Bird {
+//     fly() {
+//         return `Penguin can't fly`
+//     }
+// }
+
+// const myPenguin = new Penguin();
+// console.log(myPenguin.fly());
+
+
+
+
+// Abstraction
+
+// class CoffeeMaker {
+//     constructor() {
+//         console.log("constructor ");
+//     }
+
+//     makeCoffee() {
+//         // complex calculation regarding
+//         return `coffee is ready now take your coffee`
+//     }
+
+//     giveCoffe() {
+//         // complex calculation
+//         return `here is your coffee`
+//     }
+
+// }
+
+// const myCoffee = new CoffeeMaker()
+// console.log(myCoffee.makeCoffee());
+// console.log(myCoffee.giveCoffe());
+
+
+
+// classes
+// constructor
+// protype
+// static
+
+
+// class Bird {
+//     constructor(name) {
+//         this.name = name;
+//         console.log('constructor function');
+//     }
+
+//     method() {
+//         return (`this is a prototype method ${this.name}`);
+
+//     }
+
+//     static specialMethod() {
+//         return `this is a special method`
+//     }
+// }
+
+// // const pigeon = new Bird("pigeon")
+// // console.log(pigeon.method());
+
+// console.log(Bird.specialMethod());
+
+
+
+
+
+// Local storage
+// regex
