@@ -202,3 +202,5 @@
 
 // Local storage
 // regex
+// closure
+
