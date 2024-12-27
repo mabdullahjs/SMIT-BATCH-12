@@ -1,0 +1,15 @@
+
+download nodejs
+node -v
+npm -v
+npm i -g typescript
+
+
+
+tsc -v
+
+
+tsc app.ts // convert ts to js
+tsc app.ts -w // automatically convert ts to js
+
+
