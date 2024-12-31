@@ -10,11 +10,10 @@
 // Tuples
 // Type Guards
 // type casting
-//-----Type Annotations-----//
-// let username: string = "abdullah"
-// username = " 20"
-// let age: number = 20;
-// age = 21
-// let isLoggedIn: boolean = true;
-// isLoggedIn = false
-// let string:any = true
+var user = {
+    username: "abdullah",
+    greetUser: function () {
+        return "fjlkdf";
+    }
+};
+user.hobbies = ["abdullah", true];

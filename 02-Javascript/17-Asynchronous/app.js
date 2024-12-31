@@ -71,17 +71,17 @@ console.log("hello world!");
 //     console.log(err);
 //   });
 
-function shaadiScnz(bankBalance, username) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (bankBalance > 1000000) {
-        resolve(`shaadi mubarak hoo. 5000 do or niklo. ${username}`);
-      } else {
-        reject(`tumhara kuch nahi hoskta. Tum veela rho. ${username}`);
-      }
-    }, 2000);
-  });
-}
+// function shaadiScnz(bankBalance, username) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (bankBalance > 1000000) {
+//         resolve(`shaadi mubarak hoo. 5000 do or niklo. ${username}`);
+//       } else {
+//         reject(`tumhara kuch nahi hoskta. Tum veela rho. ${username}`);
+//       }
+//     }, 2000);
+//   });
+// }
 
 // shaadiScnz(2000000, "abdullah")
 //   .then((res) => {
@@ -206,6 +206,6 @@ const showMore = (id) => {
 
 // getData();
 
-fetch("https://dummyjson.com/products")
-  .then((res) => res.json())
-  .then(console.log);
+// fetch("https://dummyjson.com/products")
+//   .then((res) => res.json())
+//   .then(console.log);
