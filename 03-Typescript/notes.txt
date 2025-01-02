@@ -13,3 +13,30 @@ tsc app.ts // convert ts to js
 tsc app.ts -w // automatically convert ts to js
 
 
+
+// project manager
+// trello slacks microsoft teams notion
+// senior developer
+// junior developer
+// intern developer
+
+// Upfront (15%)
+
+// phase 1 (2 month) (20%)
+// UI/UX design (Figma)
+
+// phase 2 (4 month) (25%)
+// frontend: simple UI design
+// backend : complete backend
+
+// phase 3 (2 month) (25%)
+// api integeration 
+
+// phase 4 (testing)
+// software quality assurance SQA engineer 
+
+// phase deployment (deployment) DEVOPS
+// frontend deploy
+// server deploy
+
+// deliver
