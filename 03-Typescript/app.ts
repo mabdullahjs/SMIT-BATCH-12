@@ -249,3 +249,132 @@
 // let age: string = "25"
 
 
+
+
+
+
+//-----Generics-----//
+
+// function identity<T>(arg: T): T {
+//   return arg;
+// }
+
+// identity("adasdas")
+
+
+// function greetUser<T>(username: T): T {
+//     return username
+// }
+
+
+// greetUser(true)
+
+
+
+// function identityOne(val: string):string{
+//     return val
+// }
+// function identityTwo(val: any): any {
+//     return val
+// }
+
+// console.log(identityTwo(213));
+
+// function identityThree<Type>(val: Type): Type {
+//     return val
+// }
+
+// // identityThree(true)
+
+
+// interface Car {
+//     name: string;
+//     brand: string;
+// }
+
+
+// identityThree<Car>({
+//     name: "wagnor",
+//     brand: "suzuki"
+// })
+
+
+
+//-----Enums-----//
+
+// enum CardinalDirections {
+//     North,
+//     East,
+//     South,
+//     West
+// }
+
+
+// console.log(CardinalDirections.East)
+
+
+// enum User {
+//     admin = "admin",
+//     user = "user",
+//     student = "student",
+//     manager = "manager"
+// }
+
+// console.log(User.admin);
+
+
+// enum StatusCodes {
+//     NotFound = 404,
+//     Success = 200,
+//     Accepted = 202,
+//     BadRequest = 400
+// }
+
+// console.log(StatusCodes.NotFound)
+
+
+
+
+//-----Tuples-----//
+
+
+// let ourTuple: [number, boolean, string];
+// ourTuple = [20, true, "Fdfsdf"]
+
+// ourTuple.push("hello")
+
+
+// let ourTuple: readonly [number, boolean, string];
+// ourTuple = [20, true, "Fdfsdf"]
+
+// ourTuple.push("hello")
+
+
+// let ourTuple: [number, boolean, string];
+
+// ourTuple = [false, 'Coding God was mistaken', 5];
+
+
+// const ourReadonlyTuple: [number, boolean, string] = [5, true, 'The Real Coding God'];
+
+
+
+
+
+
+
+
+
+//---------Type Guards-----------//
+
+
+// function hello(str: string | number) {
+//     if (typeof str === "string") {
+//         console.log(str.toLowerCase());
+//     }
+// }
+// hello("BFSDJFBHDFB");
+// hello(324324);
+
+
+
