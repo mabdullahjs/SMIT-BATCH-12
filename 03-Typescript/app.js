@@ -11,6 +11,21 @@
 // Type Guards
 // type casting
 // classes
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 //-----Type Annotations-----//
 // let username: string = "abdullah"
 // username = " 20"
@@ -226,3 +241,38 @@
 // }
 // hello("BFSDJFBHDFB");
 // hello(324324);
+// public
+// private
+// protected
+var Car = /** @class */ (function () {
+    function Car(n, p, b) {
+        this.name = n;
+        this.price = p;
+        this.brand = b;
+    }
+    Car.prototype.checkCar = function () {
+        return "car name is ".concat(this.name, " with price ").concat(this.price, " and manufacturer is ").concat(this.price);
+    };
+    return Car;
+}());
+var CarTax = /** @class */ (function (_super) {
+    __extends(CarTax, _super);
+    function CarTax(n, p, b, tax) {
+        var _this = _super.call(this, n, p, b) || this;
+        _this.tax = tax;
+        return _this;
+    }
+    CarTax.prototype.calculateTax = function () {
+        return "hello ".concat(this.price + this.tax);
+    };
+    return CarTax;
+}(Car));
+var wagnor = new CarTax("Wagnor", 2000000, "suzuki", 5000000);
+console.log(wagnor.checkCar());
+var mehran = new CarTax('Mehran', 200000, "suzuki", 1200000);
+console.log(mehran.calculateTax());
+// const arr: CarTax[] = []
+// const arr: Array<CarTax> = []
+// arr.push(mehran)
+// arr.push(wagnor)
+// console.log(arr);

@@ -377,4 +377,51 @@
 // hello(324324);
 
 
+// public
+// private
+// protected
+
+class Car {
+    public name: string;
+    // private price: number;
+    public price: number;
+    protected brand: string;
+
+    constructor(n: string, p: number, b: string) {
+        this.name = n;
+        this.price = p;
+        this.brand = b
+    }
+
+    checkCar() {
+        return `car name is ${this.name} with price ${this.price} and manufacturer is ${this.price}`
+    }
+}
+
+class CarTax extends Car {
+    tax: number
+    constructor(n: string, p: number, b: string, tax: number) {
+        super(n, p, b)
+        this.tax = tax
+    }
+
+    calculateTax() {
+        return `hello ${this.price + this.tax}`
+    }
+}
+
+
+const wagnor = new CarTax("Wagnor", 2000000, "suzuki", 5000000)
+console.log(wagnor.checkCar());
+
+const mehran = new CarTax('Mehran', 200000, "suzuki", 1200000)
+console.log(mehran.calculateTax());
+
+
+// const arr: CarTax[] = []
+// const arr: Array<CarTax> = []
+// arr.push(mehran)
+// arr.push(wagnor)
+
+// console.log(arr);
 
