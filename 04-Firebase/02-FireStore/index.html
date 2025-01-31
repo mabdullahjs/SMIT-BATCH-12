@@ -5,17 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+        #form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .head{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>firestore</h1>
+    <h1 class="head">firestore</h1>
     <form id="form">
-        <input type="text" placeholder="title" id="title"> <br><br>
-        <textarea name="" id="description" placeholder="enter description"></textarea>
-
-        <br><br>
+        <input type="text" placeholder="title" id="title" required>
+        <textarea name="" id="description" placeholder="enter description" required></textarea>
         <button>Add Todo</button>
     </form>
+
+    <div class="container">
+                
+    </div>
 
     <script type="module" src="app.js"></script>
 </body>
