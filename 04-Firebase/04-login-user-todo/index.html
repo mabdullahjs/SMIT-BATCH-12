@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        .container {
+            display: flex ;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Home</h1>
+        <a href="./login.html">login</a>
+        <button id="logoutbtn">logout user</button>
+    </div>
+
+    <form id="form">
+        <input type="text" id="todo" placeholder="enter your todo">
+        <button type="submit">add Todo</button>
+    </form>
+
+    <ul id="ul"></ul>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
