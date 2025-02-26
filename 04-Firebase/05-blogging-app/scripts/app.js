@@ -39,8 +39,3 @@ async function getDataFromFirestore() {
 
     return user
 }
-
-
-defaultDiv.addEventListener('click', event => {
-    event.preventDefault()
-})
