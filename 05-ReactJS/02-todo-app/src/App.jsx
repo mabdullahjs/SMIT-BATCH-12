@@ -52,66 +52,140 @@
 
 
 
-import React, { useRef, useState } from 'react'
+// import React, { useRef, useState } from 'react'
+
+// function App() {
+//   const title = useRef()
+//   const description = useRef()
+//   const [todo, setTodo] = useState([]);
+
+
+//   function addTodo(event) {
+//     event.preventDefault()
+//     console.log(title.current.value);
+//     console.log(description.current.value);
+
+//     todo.push({
+//       title: title.current.value,
+//       description: description.current.value,
+//       id: Date.now()
+//     })
+//     setTodo([...todo])
+//   }
+
+//   const deleteTodo = (index)=>{
+//     console.log(index);
+//     todo.splice(index , 1);
+//     setTodo([...todo])
+
+//   }
+//   const editTodo = (index)=>{
+//     console.log(index);
+//     const updatedVal = prompt('enter updated value')
+//     todo[index].title = updatedVal
+//     setTodo([...todo])
+
+//   }
+//   return (
+//     <>
+//       <h1>Hello Todo</h1>
+
+//       <form onSubmit={addTodo}>
+//         <input type="text" placeholder='title' ref={title} />
+//         <br /><br />
+//         <input type="text" placeholder='description' ref={description} />
+//         <br /><br />
+//         <button >add Todo</button>
+//       </form>
+//       <div>
+//         {todo.length > 0 ? todo.map((item , index) => {
+//           return <div key={item.id} style={{
+//             border: '1px solid black',
+//             borderRadius: '20px',
+//             padding: '20px',
+//             margin: '20px'
+//           }}>
+//             <h3>title: {item.title}</h3>
+//             <h3>desc: {item.description}</h3><br />
+//             <button onClick={()=>deleteTodo(index)}>delete</button>
+//             <button onClick={()=>editTodo(index)}>edit</button>
+//           </div>
+//         }) : <h1>No todo found...</h1>}
+//       </div>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+// usestate
+// useref
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React from "react";
+import { useState } from "react";
+import { useRef } from "react";
 
 function App() {
-  const title = useRef()
-  const description = useRef()
+  const todoInput = useRef();
   const [todo, setTodo] = useState([]);
 
+  const addTodo = (event) => {
+    event.preventDefault();
+    console.log(todoInput.current.value);
+    setTodo([...todo, todoInput.current.value])
 
-  function addTodo(event) {
-    event.preventDefault()
-    console.log(title.current.value);
-    console.log(description.current.value);
+    todoInput.current.value = ""
 
-    todo.push({
-      title: title.current.value,
-      description: description.current.value,
-      id: Date.now()
-    })
-    setTodo([...todo])
   }
 
-  const deleteTodo = (index)=>{
-    console.log(index);
-    todo.splice(index , 1);
-    setTodo([...todo])
-    
+  const deleteTodo = (index) => {
+    console.log('delete todo', index)
+    todo.splice(index, 1);
+    setTodo([...todo]);
   }
-  const editTodo = (index)=>{
-    console.log(index);
-    const updatedVal = prompt('enter updated value')
-    todo[index].title = updatedVal
-    setTodo([...todo])
+  const editTodo = (index) => {
+    const updatedVal = prompt('enter updated val');
+    if(updatedVal === ''){
+      alert('bhai prompt ma kuch to likh');
+      return
+    }
     
+    todo[index] = updatedVal;
+    setTodo([...todo]);
+
   }
   return (
     <>
-      <h1>Hello Todo</h1>
-
+      <h1>Todo App</h1>
       <form onSubmit={addTodo}>
-        <input type="text" placeholder='title' ref={title} />
-        <br /><br />
-        <input type="text" placeholder='description' ref={description} />
-        <br /><br />
-        <button >add Todo</button>
+        <input type="text" placeholder="enter todo" ref={todoInput} />
+        <button type="submit">add Todo</button>
       </form>
-      <div>
-        {todo.length > 0 ? todo.map((item , index) => {
-          return <div key={item.id} style={{
-            border: '1px solid black',
-            borderRadius: '20px',
-            padding: '20px',
-            margin: '20px'
-          }}>
-            <h3>title: {item.title}</h3>
-            <h3>desc: {item.description}</h3><br />
-            <button onClick={()=>deleteTodo(index)}>delete</button>
-            <button onClick={()=>editTodo(index)}>edit</button>
-          </div>
-        }) : <h1>No todo found...</h1>}
-      </div>
+      <ul>
+        {todo.length > 0 ? todo.map((item, index) => {
+          return <li key={index}>{item}
+            <button onClick={() => deleteTodo(index)}>delete</button>
+            <button onClick={() => editTodo(index)}>edit</button>
+          </li>
+        }) : <p>No todo found</p>}
+      </ul>
     </>
   )
 }
@@ -120,5 +194,11 @@ export default App
 
 
 
-// usestate
-// useref
+
+
+
+
+
+
+
+
