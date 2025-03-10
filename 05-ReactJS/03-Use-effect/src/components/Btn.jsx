@@ -24,28 +24,47 @@
 
 
 
-import React from 'react'
+// import React from 'react'
 
-function Btn({title , bgcolor, color , width, padding, func}) {
+// function Btn({title , bgcolor, color , width, padding, func}) {
+//   return (
+//     <>
+//     <button style={{
+//       backgroundColor: bgcolor,
+//       color,
+//       width,
+//       padding,
+//       fontSize: '30px',
+//       margin: '30px'
+
+//     }} onClick={func}>{title}</button>
+//     </>
+//   )
+// }
+
+// export default Btn
+
+
+
+
+import React, { useEffect } from 'react'
+
+function Btn({title}) {
+  useEffect(()=>{
+    console.log("btn component mount")
+
+    return ()=>{
+      console.log("unmount");
+      
+    }
+  } , [])
+
   return (
     <>
-    <button style={{
-      backgroundColor: bgcolor,
-      color,
-      width,
-      padding,
-      fontSize: '30px',
-      margin: '30px'
-
-    }} onClick={func}>{title}</button>
+    <button>{title}</button>
     </>
   )
 }
 
 export default Btn
-
-
-
-
-
 
