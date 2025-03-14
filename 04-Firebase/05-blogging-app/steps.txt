@@ -1,0 +1,5 @@
+1- firebase cli ko install kiya
+2- firebase login kiya
+3- build ka folder banaka saara    kaam uska undar paste krdia
+4- firebase init
+5- firebase deploy
