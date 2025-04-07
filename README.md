@@ -6,11 +6,10 @@
 - [x] CSS
 - [x] bootstrap/tailwind
 - [x] JAVASCRIPT
-- [ ] TYPESCRIPT
-- [ ] GITHUB/GIT
-- [ ] FIREBASE
-- [ ] JS HACKATHON
-- [ ] ReactJS
+- [x] TYPESCRIPT
+- [x] GITHUB/GIT
+- [x] FIREBASE
+- [x] ReactJS
 - [ ] NextJS
 - [ ] nodejs expressjs
 - [ ] mongodb
